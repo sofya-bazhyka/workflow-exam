@@ -1,0 +1,14 @@
+name: Simple Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo Hello World
+      - name: Print your name
+        run: echo Sofya
